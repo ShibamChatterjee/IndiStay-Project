@@ -1,0 +1,200 @@
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.container{
+    flex: 1;
+}
+/*Navbar styling*/
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #000000 !important; /*!importat is used to over ride the custom styling*/
+}
+
+/*Footer*/
+.f-info-links a{
+    text-decoration: none;
+    color: #000000;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links,
+.f-info-social,.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-social i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+
+/* Cards on listings page*/
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400;
+
+}
+.listing-link {
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.1;
+    background-color: white;
+}
+
+/*New page*/
+.add-btn{
+    background-color:#ff545f !important;
+    border: none !important;
+}
+/*Edit page*/
+.edit-btn{
+    background-color:#ff545f !important;
+    border: none !important; 
+}
+/*Show page*/
+.show-img{
+    height: 65vh;
+	object-fit: cover;
+}
+.btns{
+    display: flex;
+
+}
+.show-card{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#map { 
+	height: 400px;
+	width: 600px;
+}
+
+.list-your-home {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: #ff453a; /* Background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+  }
+
+  .list-your-home:hover {
+    background-color: #ffeeee; /* Lighter red for hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      display: block;
+    }
+  
+    .navbar-collapse {
+      display: none;
+    }
+  
+    .navbar-collapse.show {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-link {
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+  
+    .dropdown-menu {
+      text-align: center;
+    }
+  
+    .dropdown-toggle::after {
+      display: none;
+    }
+  
+    .logo {
+      height: 40px;
+      width: 80px;
+    }
+  }
+  
+  /* Dropdown Styles */
+  .dropdown-menu {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+  }
+  
+  .dropdown-item {
+    color: #343a40;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f3f5;
+  }
+  
+  /* Button Styles */
+  .btn-outline {
+    border: 1px solid #343a40;
+    border-radius: 20px;
+    color: #343a40;
+  }
+  
+  .btn-outline:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+    #map{
+        height: 200px;
+        width: 300px;
+       
+    }
+
+  }
